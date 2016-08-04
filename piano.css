@@ -2,15 +2,21 @@ body
 {
   background-color: black;
 }
+#title
+{
+  color: white;
+  font-size: 4em;
+  text-align: center;
+}
 #top
 {
-  margin-top: 25%;
+  margin-top: 10%;
 }
 .note
 {
   font-size: 3em;
-  color: white;
-  border: 2px solid white;
+  color: white !important;
+  border: 2px solid white !important;
   text-align: center;
   border-radius: 2em;
 }
