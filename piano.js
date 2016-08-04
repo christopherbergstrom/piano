@@ -41,8 +41,7 @@ var gSH;
 
 $(document).ready(function()
 {
-  aL = new Audio("keys/aL.wav");
-  aSL = new Audio("keys/aSL.wav");
+
   bL = new Audio("keys/bL.wav");
   cL = new Audio("keys/cL.wav");
   cSL = new Audio("keys/cSL.wav");
@@ -87,10 +86,12 @@ $(document).ready(function()
     // low
     if (down[16] && down[90])
     {
+      aL = new Audio("keys/aL.wav");
       aL.play();
     }
     else if (down[16] && down[83])
     {
+      aSL = new Audio("keys/aSL.wav");
       aSL.play();
     }
     else if (down[16] && down[88])
@@ -134,58 +135,8 @@ $(document).ready(function()
       gSL.play();
     }
 
-    // medium
-    if (down[90])
-    {
-      a.play();
-    }
-    else if (down[83])
-    {
-      aS.play();
-    }
-    else if (down[88])
-    {
-      b.play();
-    }
-    else if (down[67])
-    {
-      c.play();
-    }
-    else if (down[70])
-    {
-      cS.play();
-    }
-    else if (down[86])
-    {
-      d.play();
-    }
-    else if (down[71])
-    {
-      dS.play();
-    }
-    else if (down[66])
-    {
-      e.play();
-    }
-    else if (down[78])
-    {
-      f.play();
-    }
-    else if (down[74])
-    {
-      fS.play();
-    }
-    else if (down[77])
-    {
-      g.play();
-    }
-    else if (down[75])
-    {
-      gS.play();
-    }
-
     // high
-    if (down[17] && down[90])
+    else if (down[17] && down[90])
     {
       aH.play();
     }
@@ -233,5 +184,60 @@ $(document).ready(function()
     {
       gSH.play();
     }
+
+
+    // medium
+    else if (down[90])
+    {
+      a = new Audio("keys/a.wav");
+      a.play();
+    }
+    else if (down[83])
+    {
+      aS.play();
+    }
+    else if (down[88])
+    {
+      b.play();
+    }
+    else if (down[67])
+    {
+      c.play();
+    }
+    else if (down[70])
+    {
+      cS.play();
+    }
+    else if (down[86])
+    {
+      d.play();
+    }
+    else if (down[71])
+    {
+      dS.play();
+    }
+    else if (down[66])
+    {
+      e.play();
+    }
+    else if (down[78])
+    {
+      f.play();
+    }
+    else if (down[74])
+    {
+      fS.play();
+    }
+    else if (down[77])
+    {
+      g.play();
+    }
+    else if (down[75])
+    {
+      gS.play();
+    }
+  }).keyup(function(e)
+  {
+    down[e.which] = false;
   });
 });
