@@ -7,10 +7,11 @@ body
   color: white;
   font-size: 4em;
   text-align: center;
+  margin-bottom: 5%;
 }
-#top
+.top
 {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .note
 {
