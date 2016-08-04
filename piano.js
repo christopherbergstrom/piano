@@ -84,13 +84,154 @@ $(document).ready(function()
   {
     down[e.which] = true;
 
-    if (down[65])
+    // low
+    if (down[16] && down[90])
+    {
+      aL.play();
+    }
+    else if (down[16] && down[83])
+    {
+      aSL.play();
+    }
+    else if (down[16] && down[88])
+    {
+      bL.play();
+    }
+    else if (down[16] && down[67])
+    {
+      cL.play();
+    }
+    else if (down[16] && down[70])
+    {
+      cSL.play();
+    }
+    else if (down[16] && down[86])
+    {
+      dL.play();
+    }
+    else if (down[16] && down[71])
+    {
+      dSL.play();
+    }
+    else if (down[16] && down[66])
+    {
+      eL.play();
+    }
+    else if (down[16] && down[78])
+    {
+      fL.play();
+    }
+    else if (down[16] && down[74])
+    {
+      fSL.play();
+    }
+    else if (down[16] && down[77])
+    {
+      gL.play();
+    }
+    else if (down[16] && down[75])
+    {
+      gSL.play();
+    }
+
+    // medium
+    if (down[90])
     {
       a.play();
     }
-    else if (down[66])
+    else if (down[83])
     {
       aS.play();
+    }
+    else if (down[88])
+    {
+      b.play();
+    }
+    else if (down[67])
+    {
+      c.play();
+    }
+    else if (down[70])
+    {
+      cS.play();
+    }
+    else if (down[86])
+    {
+      d.play();
+    }
+    else if (down[71])
+    {
+      dS.play();
+    }
+    else if (down[66])
+    {
+      e.play();
+    }
+    else if (down[78])
+    {
+      f.play();
+    }
+    else if (down[74])
+    {
+      fS.play();
+    }
+    else if (down[77])
+    {
+      g.play();
+    }
+    else if (down[75])
+    {
+      gS.play();
+    }
+
+    // high
+    if (down[17] && down[90])
+    {
+      aH.play();
+    }
+    else if (down[17] && down[83])
+    {
+      aSH.play();
+    }
+    else if (down[17] && down[88])
+    {
+      bH.play();
+    }
+    else if (down[17] && down[67])
+    {
+      cH.play();
+    }
+    else if (down[17] && down[70])
+    {
+      cSH.play();
+    }
+    else if (down[17] && down[86])
+    {
+      dH.play();
+    }
+    else if (down[17] && down[71])
+    {
+      dSH.play();
+    }
+    else if (down[17] && down[66])
+    {
+      eH.play();
+    }
+    else if (down[17] && down[78])
+    {
+      fH.play();
+    }
+    else if (down[17] && down[74])
+    {
+      fSH.play();
+    }
+    else if (down[17] && down[77])
+    {
+      gH.play();
+    }
+    else if (down[17] && down[75])
+    {
+      gSH.play();
     }
   });
 });
